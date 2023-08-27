@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranav's Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(15, 15, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(147, 147, 231);
+            font-size: 1.05rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .first {
+            display: flex;
+            justify-content: space-around;
+            margin: 150px 0;
+        }
+
+        .first div {
+            width: 35%;
+        }
+
+        .leftSection {
+            font-size: 3.5rem;
+            margin: 40px;
+        }
+
+        .rightSection img {
+            width: 100%;
+        }
+
+        .name {
+            color: rgb(165, 135, 165);
+        }
+
+        #element {
+            color: rgb(165, 135, 165);
+        }
+        main hr{
+            border:0;
+            background: rgb(84, 84, 121);
+            height:1.2px;
+            margin:40px 120px;
+        }
+        .second{
+            display:flex;
+            justify-content: space-around;
+            margin:80px 0;
+        }
+        .second .leftSection{
+            font-size:1.5rem;
+            margin:40px;
+        }
+        .second .leftSection #qualifications{
+            font-size: 2rem;
+            color:rgb(103, 62, 118);
+        }
+        .second .rightSection img{
+            width: 100%;
+        }
+
+        body {
+            background-color: rgb(9, 9, 12);
+            color: white;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Pranav's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/">ABOUT</a></li>
+                    <li><a href="/">SKILLS & PROJECTS</a></li>
+                    <li><a href="/">CONTACT ME</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="first">
+            <div class="leftSection">Hi <br>I am <span class=name>Pranav Jalan</span>
+                <div>I am a</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="web-developer-interview-questions-and-answers.jpg">
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="second">
+            <div class="leftSection">
+                <ul>
+                    <lh id="qualifications">QUALIFICATIONS :</lh>
+                    <li>
+                        SCORED 93% IN CLASS 10 BOARDS (CBSE)
+                    </li><br>
+                    <li>
+                        SCORED 85% IN CLASS 12 BOARDS (CBSE)
+                    </li><br>
+                    <li>
+                        CURRENTLY PERSUING B.TECH FROM KIIT UNIVERSITY<br>AND HOLDING 8.4 CGPA WITH NO BACKLOGS(4th SEM)
+                    </li><br>
+                </ul>
+            </div>
+            <div class="rightSection">
+                <img src="qualification.png" width="700" height="300">
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['WEB DEVELOPER', 'VIDEO EDITOR', 'DATA ANALYST'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>
